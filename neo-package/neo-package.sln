@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neo-package", "neo-package\neo-package.csproj", "{7598BCB7-8A47-46F3-8815-5D27982254F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "neo-package", "neo-package\neo-package.csproj", "{7598BCB7-8A47-46F3-8815-5D27982254F3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "neo-vm", "..\neo-vm\src\neo-vm\neo-vm.csproj", "{945226BB-595B-4C3D-BF67-7DCA0BA25B23}"
 EndProject
@@ -18,6 +18,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "plugins", "plugins", "{1DC74A23-E6D8-45C9-B3D6-CE0CF0F80450}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LevelDBStore", "..\neo-plugins\src\LevelDBStore\LevelDBStore.csproj", "{DA9B3DDB-4029-44C6-A328-D9C44FE7BA07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpcServer", "..\neo-plugins\src\RpcServer\RpcServer.csproj", "{B40404CD-2EEF-4258-88D1-DB0EF107D492}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpcNep5Tracker", "..\neo-plugins\src\RpcNep5Tracker\RpcNep5Tracker.csproj", "{CEF6E44D-F4A5-416E-B754-F725E86FEDDE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationLogs", "..\neo-plugins\src\ApplicationLogs\ApplicationLogs.csproj", "{2220D3B2-70A0-4102-B31C-939E0296C52B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neo.ConsoleService", "..\neo-cli\Neo.ConsoleService\Neo.ConsoleService.csproj", "{41BA848E-3CEA-4F26-AC83-4F7DAC6AE0D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +57,22 @@ Global
 		{DA9B3DDB-4029-44C6-A328-D9C44FE7BA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA9B3DDB-4029-44C6-A328-D9C44FE7BA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA9B3DDB-4029-44C6-A328-D9C44FE7BA07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B40404CD-2EEF-4258-88D1-DB0EF107D492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40404CD-2EEF-4258-88D1-DB0EF107D492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40404CD-2EEF-4258-88D1-DB0EF107D492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40404CD-2EEF-4258-88D1-DB0EF107D492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEF6E44D-F4A5-416E-B754-F725E86FEDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEF6E44D-F4A5-416E-B754-F725E86FEDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEF6E44D-F4A5-416E-B754-F725E86FEDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEF6E44D-F4A5-416E-B754-F725E86FEDDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2220D3B2-70A0-4102-B31C-939E0296C52B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2220D3B2-70A0-4102-B31C-939E0296C52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2220D3B2-70A0-4102-B31C-939E0296C52B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2220D3B2-70A0-4102-B31C-939E0296C52B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41BA848E-3CEA-4F26-AC83-4F7DAC6AE0D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41BA848E-3CEA-4F26-AC83-4F7DAC6AE0D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41BA848E-3CEA-4F26-AC83-4F7DAC6AE0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41BA848E-3CEA-4F26-AC83-4F7DAC6AE0D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +81,10 @@ Global
 		{945226BB-595B-4C3D-BF67-7DCA0BA25B23} = {12E5CB3A-D51B-4FCF-A02F-C2E286FD5573}
 		{9371A425-942C-48D0-837E-8D0FF8F2A732} = {12E5CB3A-D51B-4FCF-A02F-C2E286FD5573}
 		{DA9B3DDB-4029-44C6-A328-D9C44FE7BA07} = {1DC74A23-E6D8-45C9-B3D6-CE0CF0F80450}
+		{B40404CD-2EEF-4258-88D1-DB0EF107D492} = {1DC74A23-E6D8-45C9-B3D6-CE0CF0F80450}
+		{CEF6E44D-F4A5-416E-B754-F725E86FEDDE} = {1DC74A23-E6D8-45C9-B3D6-CE0CF0F80450}
+		{2220D3B2-70A0-4102-B31C-939E0296C52B} = {1DC74A23-E6D8-45C9-B3D6-CE0CF0F80450}
+		{41BA848E-3CEA-4F26-AC83-4F7DAC6AE0D8} = {12E5CB3A-D51B-4FCF-A02F-C2E286FD5573}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7BE4B963-BC07-4598-A974-5E5E327F972E}
