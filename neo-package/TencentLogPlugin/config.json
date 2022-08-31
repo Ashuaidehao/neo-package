@@ -1,0 +1,11 @@
+{
+  "PluginConfiguration": {
+    "TencentCloudLogger": {
+      "Level": "Information", //记录的最低日志级别
+      "ApiHost": "http://ap-shanghai.cls.tencentcs.com", //请求地址 
+      "SecretId": "AKIDhDUVifNq2ye4E8lAJBm7C0Yqsd7KHxMU",
+      "SecretKey": "sVrwlLegRwA7mAI9i01lEQM1e17wUklW",
+      "Topic": "4807fc45-cce4-4062-9254-02867df09017" //日志主题ID
+    }
+  }
+}

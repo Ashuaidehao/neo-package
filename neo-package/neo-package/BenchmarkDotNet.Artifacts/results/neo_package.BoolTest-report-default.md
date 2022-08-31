@@ -1,0 +1,26 @@
+
+BenchmarkDotNet=v0.13.0, OS=Windows 10.0.19042.1110 (20H2/October2020Update)
+Intel Core i7-8650U CPU 1.90GHz (Kaby Lake R), 1 CPU, 8 logical and 4 physical cores
+.NET SDK=5.0.205
+  [Host]     : .NET 5.0.8 (5.0.821.31504), X64 RyuJIT
+  DefaultJob : .NET 5.0.8 (5.0.821.31504), X64 RyuJIT
+
+
+ Method |     a |     b |      Mean |     Error |    StdDev |    Median |
+------- |------ |------ |----------:|----------:|----------:|----------:|
+    **And** | **False** | **False** | **0.1459 ns** | **0.0469 ns** | **0.0461 ns** | **0.1529 ns** |
+ AndBit | False | False | 0.0364 ns | 0.0361 ns | 0.0482 ns | 0.0113 ns |
+     Or | False | False | 0.0048 ns | 0.0112 ns | 0.0104 ns | 0.0000 ns |
+  OrBit | False | False | 0.0209 ns | 0.0342 ns | 0.0336 ns | 0.0000 ns |
+    **And** | **False** |  **True** | **0.0440 ns** | **0.0400 ns** | **0.0521 ns** | **0.0197 ns** |
+ AndBit | False |  True | 0.0201 ns | 0.0350 ns | 0.0389 ns | 0.0000 ns |
+     Or | False |  True | 0.0110 ns | 0.0246 ns | 0.0218 ns | 0.0000 ns |
+  OrBit | False |  True | 0.0008 ns | 0.0024 ns | 0.0021 ns | 0.0000 ns |
+    **And** |  **True** | **False** | **0.0114 ns** | **0.0242 ns** | **0.0214 ns** | **0.0000 ns** |
+ AndBit |  True | False | 0.0338 ns | 0.0398 ns | 0.0409 ns | 0.0068 ns |
+     Or |  True | False | 0.0382 ns | 0.0406 ns | 0.0434 ns | 0.0177 ns |
+  OrBit |  True | False | 0.0193 ns | 0.0282 ns | 0.0290 ns | 0.0000 ns |
+    **And** |  **True** |  **True** | **0.0024 ns** | **0.0054 ns** | **0.0043 ns** | **0.0000 ns** |
+ AndBit |  True |  True | 0.0169 ns | 0.0279 ns | 0.0299 ns | 0.0000 ns |
+     Or |  True |  True | 0.0355 ns | 0.0406 ns | 0.0417 ns | 0.0223 ns |
+  OrBit |  True |  True | 0.0326 ns | 0.0387 ns | 0.0475 ns | 0.0063 ns |
